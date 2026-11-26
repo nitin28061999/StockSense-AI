@@ -1,0 +1,70 @@
+# Virtual environments
+.venv/
+.venv-*/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Logs and temporary files
+logs/
+*.log
+*.tmp
+*.bak
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local databases
+*.db
+*.sqlite3
+# Local market data - download through the ingestion pipeline
+/data/raw/*
+!/data/raw/.gitkeep
+
+# Generated datasets and splits
+/data/processed/*
+
+# Local logs
+/logs/
+
+# Python environment variants
+.venv*/
+# Generated report CSVs (retain selected summary results)
+reports/**/*.csv
+!reports/models/final_test_classification.csv
+!reports/models/final_test_regression.csv
+!reports/models/walk_forward_classification_summary.csv
+!reports/models/walk_forward_regression_summary.csv
